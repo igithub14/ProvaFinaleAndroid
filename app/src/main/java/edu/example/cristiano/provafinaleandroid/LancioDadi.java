@@ -20,15 +20,12 @@ import java.util.Random;
 
 public class LancioDadi extends Activity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lanciodadi);
-
-
-
-
-
 
 
 /*Gestione bottone del lancio*/
@@ -37,11 +34,24 @@ public class LancioDadi extends Activity {
         btnFaiLancio.setOnClickListener(new OnClickListener(){
             @Override
             public void onClick(View arg0) {
+                /*
                 // definisco l'intenzione
                 Intent openEffettualancio = new Intent(LancioDadi.this,EffettuaLancio.class);
                 // passo all'attivazione dell'activity ChoiceActivity.java
                 startActivity(openEffettualancio);
-              
+                */
+                Random rand = new Random();
+                int val1 = rand.nextInt(6) + 1;
+                int val2 = rand.nextInt(6) + 1;
+                int res = val1 + val2;
+
+                Toast mioToast = Toast.makeText(LancioDadi.this,
+                        String.valueOf(res),
+                        Toast.LENGTH_SHORT);
+
+                mioToast.show();
+
+
             }
         });
 
