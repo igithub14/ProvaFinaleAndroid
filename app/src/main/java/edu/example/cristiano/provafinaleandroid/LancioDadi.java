@@ -41,6 +41,7 @@ public class LancioDadi extends Activity {
                 Intent openEffettualancio = new Intent(LancioDadi.this,EffettuaLancio.class);
                 // passo all'attivazione dell'activity ChoiceActivity.java
                 startActivity(openEffettualancio);
+              
             }
         });
 
