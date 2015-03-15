@@ -21,6 +21,17 @@ public class Utilities extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.utilities);
 
+        Button btnLancioDadi=(Button)findViewById(R.id.buttonLancioDadi);
+        btnLancioDadi.setOnClickListener(new OnClickListener(){
+            @Override
+            public void onClick(View arg0) {
+                // definisco l'intenzione
+                Intent openLancioDadi = new Intent(Utilities.this,LancioDadi.class);
+                // passo all'attivazione dell'activity ChoiceActivity.java
+                startActivity(openLancioDadi);
+            }
+        });
+
         Button btnCalcolatrice=(Button)findViewById(R.id.buttonCalcolatrice);
         btnCalcolatrice.setOnClickListener(new OnClickListener(){
             @Override

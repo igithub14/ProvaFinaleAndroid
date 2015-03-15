@@ -5,22 +5,13 @@
     android:gravity="center|top"
     android:orientation="vertical" >
 
-
-
-
     <Button
-        android:id="@+id/buttonLancioDadi"
+        android:id="@+id/buttonNada"
         android:layout_width="fill_parent"
         android:layout_height="100dp"
         android:layout_marginTop="10dp"
-        android:text="Lancio Dadi" />
+        android:text="Guarda il toast!!!" />
 
-    <Button
-        android:id="@+id/buttonCalcolatrice"
-        android:layout_width="fill_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="10dp"
-        android:text="Calcolatrice" />
 
     <Button
         android:id="@+id/buttonBack"
